@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Survey Me!</title>
-</head>
-<body>
+  </head>
+  <body>
     <title id="title"><h1>Survey Something Good</h1></title>
     <p id="description">Survey Things You Like And More!</p>
     <form id="survey-form">
-        <label for="name">Name: </label>
-        <input id="name">
-        <label for="email">Email: </label>
-        <input id="email">
-
+      <label id="name-label" for="name">First Name: </label>
+      <input id="name" type="input" placeholder="Fred" />
+      <label id="email-label" for="email">Email: </label>
+      <input id="email" type="email" placeholder="fred@fred.com" />
+      <label id="number-label" for="name">Number: </label>
+      <input type="number" min="1" max="50" placeholder="1-50" />
+      <label id="dropdown-label" for="name">Cars: </label>
+      <select id="dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <p>Please select your gender:</p>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+      <p>How are you riding:</p>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br />
+      <textarea placeholder="Additional comments"></textarea>
+      <input type="submit" />
     </form>
-    
-</body>
+  </body>
 </html>
